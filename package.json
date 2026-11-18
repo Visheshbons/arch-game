@@ -1,0 +1,23 @@
+{
+  "name": "arch-game",
+  "version": "0.1.0",
+  "description": "game where u install arch",
+  "keywords": [
+    "first-game"
+  ],
+  "homepage": "https://github.com/Visheshbons/arch-game#readme",
+  "bugs": {
+    "url": "https://github.com/Visheshbons/arch-game/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Visheshbons/arch-game.git"
+  },
+  "license": "ISC",
+  "author": "Vishesh Kudva",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
