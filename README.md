@@ -8,20 +8,21 @@ My first ever game btw :)
 ```
 arch/
 ├── package.json
-├── electron.js              # window manager
+├── electron.js                    # window manager
 └── src/
-    ├── main.js              # controller loop
+    ├── main.js                    # controller loop
     ├── engine/
-    │   ├── gameState.js     # player progress and game state
-    │   ├── vfs.js           # /dev, /etc, /mnt, etc.
-    │   └── parser.js        # literally bash but worse
+    │   ├── gameState.js           # player progress and game state
+    │   ├── vfs.js                 # /dev, /etc, /mnt, etc.
+    │   ├── parser.js              # literally bash but worse
+    │   └── commands.js            # commands to functions
     ├── data/
-    │   ├── packages.json    # arch packages (base, linux, grub, etc.)
-    │   └── errors.json      # crasher
+    │   ├── packages.json          # arch packages (base, linux, grub, etc.)
+    │   └── errors.json            # crasher
     └── renderer/
-        ├── index.html       # ui
-        ├── styles.css       # also ui
-        └── renderer.js      # still ui
+        ├── index.html             # ui
+        ├── styles.css             # also ui
+        └── renderer.js            # still ui
 ```
 
 ## Design
@@ -44,7 +45,7 @@ different difficulty modes
 too lazy to build vm and thatll defeat the point so yea \
 literally nothing yet \
 need to plan \
-look at something that isn't the second commit u psychopath
+look at something that isn't the third commit u psychopath
 
 # IMPORTANT
 
