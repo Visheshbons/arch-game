@@ -5,10 +5,24 @@
  * @author me
  */
 
+// elements
 const stdout = document.getElementById('stdout');
 const stdin = document.getElementById('stdin');
 // hehe std
 const prompt = document.getElementById('prompt');
+
+// data
+let hostname = 'archiso'
+let username = 'root'
+let cwd = '/home/archiso'
+let promptstr = `${username}@${hostname} ${cwd === '/home/archiso' ? '~' : cwd} ${username === 'root' ? '#' : '$'}`;
+prompt.textContent = promptstr;
+
+// get prompt
+function getPrompt() {
+	let promptstr = `${username}@${hostname} ${cwd === '/home/archiso' ? '~' : cwd} ${username === 'root' ? '#' : '$'}`;
+	return promptstr;
+}
 
 // force input focus
 document.addEventListener('click', () => {
@@ -20,7 +34,7 @@ stdin.addEventListener('keydown', (e) => {
   if (e.key === 'Enter') {
     const rawin = stdin.value.trim();
 		if (!rawin) return
-		line(`${prompt.textContent} ${rawin}`);
+		line(`${getPrompt()} ${rawin}`);
 		stdin.value = '';
 		proc(rawin); // todo
   }
@@ -34,5 +48,42 @@ function line(text) {
 	window.scrollTo(0, document.body.scrollHeight); // autoscroll
 }
 
-// todo: link to command data
-// also its right about 1am now
+function proc(input) {
+	// split
+	const args = input.split(' ');
+	const cmd = args[0];
+	const tail = args.slice(1)
+	// this is gonna be so bad i just know it (1:12am rn)
+
+	// run ig
+	//,todo: connetc properly to engine
+	switch (cmd) {
+		case 'help':
+			line(`skill issue`)
+			break;
+		
+		case 'clear':
+			stdout.innerHTML = '';
+			break;
+		
+		case 'echo':
+			line(tail.join(' '));
+			break;
+
+		case 'whoami':
+			line(username);
+			break;
+
+		case 'hostname':
+			line(hostname);
+			break;
+
+		case 'pwd':
+			line(cwd);
+			break;
+
+		default:
+			line(`command not found: ${cmd}`);
+			break;
+	}
+}
