@@ -14,7 +14,7 @@ function createWindow () {
     }
   })
 
-  win.loadFile('index.html')
+  win.loadFile('src/renderer/index.html')
 }
 
 app.whenReady().then(() => {
