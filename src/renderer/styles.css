@@ -22,6 +22,11 @@
     color: white;
 }
 
+#stdout .line {
+    display: block;
+    height: 1.2em;
+}
+
 #stdin {
     color: white;
     background-color: black;
