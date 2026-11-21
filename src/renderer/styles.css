@@ -1,4 +1,6 @@
-
+main {
+    display: flex;
+}
 
 /* ty google search ai */
 @font-face {
@@ -38,4 +40,5 @@
     font-size: 14px;
     line-height: 1.2;
     padding: 0;
+    flex: 1;
 }

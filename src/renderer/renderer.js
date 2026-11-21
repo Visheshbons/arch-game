@@ -33,11 +33,17 @@ document.addEventListener('click', () => {
 stdin.addEventListener('keydown', (e) => {
   if (e.key === 'Enter') {
     const rawin = stdin.value.trim();
-		if (!rawin) return
+		// if (!rawin) return
 		line(`${getPrompt()} ${rawin}`);
 		stdin.value = '';
-		proc(rawin); // todo
+		proc(rawin); // wip
   }
+	// ctrl c
+	else if (e.key === 'c' && e.ctrlKey) {
+    const rawin = stdin.value.trim();
+		line(`${getPrompt()} ${rawin}^C`);
+		stdin.value = '';
+	}
 })
 
 function line(text) {
@@ -80,6 +86,9 @@ function proc(input) {
 
 		case 'pwd':
 			line(cwd);
+			break;
+
+		case '':
 			break;
 
 		default:
