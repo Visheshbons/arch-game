@@ -7,8 +7,11 @@ const path = require('node:path')
 
 function createWindow () {
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    // width: 800,
+    // height: 600,
+    fullscreen: true,
+    frame: false,
+    backgroundColor: '#000',
     webPreferences: {
       preload: path.join(__dirname, 'preload.cjs')
     }

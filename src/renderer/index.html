@@ -7,6 +7,49 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <main>
+
+        <!-- terminal -->
+        <section id="terminal">
+
+            <!-- sdout -->
+            <div id="sdout">
+                <!-- js will handle -->
+                <div class="line">This is placeholder text.</div>
+                <div class="line">If you are seeing this, please report this issue to the developer.</div>
+            </div>
+
+            <!-- stdin -->
+            <div id="input-line">
+                <span id="prompt">placeholder ~ #</span>
+                <input
+                    type="text"
+                    id="cmd-input"
+                    autocomplete="off"
+                    autocorrect="off"
+                    autocapitalize="off"
+                    spellcheck="false"
+                    autofocus
+                />
+                <!-- mb adding js for auto later (its 12:27am at time of writing this) -->
+            </div>
+
+        </section>
+
+        <!-- sidebar for ex mode and stuff -->
+        <!-- also just discovered <aside> exists bc of autocomplete being very entusiastic lmao -->
+        <aside id="guide">
+            <h2>Guide</h2>
+            <p id="current-hint">Placeholder hint</p>
+            <ul id="step-list-idk">
+                <li data-step="hfjgkjf">jsafdadegfakgf</li>
+                <li data-step="wutfkyguuf">hfgkeufdjhvfskgf</li>
+                <!-- js should fill this in -->
+            </ul>
+        </aside>
+
+    </main>
+
+    <script type="module" src="renderer.js"></script>
 </body>
 </html>

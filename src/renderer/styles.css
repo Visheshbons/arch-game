@@ -1,1 +1,30 @@
-/* works */
+
+
+/* ty google search ai */
+@font-face {
+  font-family: 'tty';
+  src: url('./assets/fonts/TerminusTTF-4.49.3.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#terminal {
+    background-color: black;
+    color: white;
+    font-family: 'tty', monospace;
+    -webkit-font-smoothing: none;
+    font-smooth: never;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+#stdout {
+    color: white;
+}
+
+#cmd-input {
+    color: white;
+    background-color: black;
+    border: none;
+    outline: none;
+}
