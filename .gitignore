@@ -1,0 +1,9 @@
+# root
+package-lock.json
+node_modules/*
+
+# src/data
+
+# src/engine
+
+# src/renderer

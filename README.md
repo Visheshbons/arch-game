@@ -10,7 +10,7 @@ arch/
 ├── package.json
 ├── electron.js                    # window manager
 └── src/
-    ├── main.js                    # controller loop
+    ├── index.js                    # controller loop
     ├── engine/
     │   ├── gameState.js           # player progress and game state
     │   ├── vfs.js                 # /dev, /etc, /mnt, etc.
@@ -45,7 +45,11 @@ different difficulty modes
 too lazy to build vm and thatll defeat the point so yea \
 literally nothing yet \
 need to plan \
-look at something that isn't the third commit u psychopath
+look at something that isn't the fourth commit u psychopath
+
+### AI usage
+
+AI was used in deveopment in the form of Github Copilot Autocomplete.
 
 # IMPORTANT
 
