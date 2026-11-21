@@ -22,9 +22,14 @@
     color: white;
 }
 
-#cmd-input {
+#stdin {
     color: white;
     background-color: black;
     border: none;
     outline: none;
+    font-family: 'tty', monospace;
+    -webkit-font-smoothing: none;
+    font-smooth: never;
+    font-size: 14px;
+    line-height: 1.2;
 }
